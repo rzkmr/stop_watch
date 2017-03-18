@@ -1,6 +1,57 @@
-body {
+/*body {
   font: 16px/1 sans-serif;
+}*/
+@font-face { font-family: Digital; src: url('digital/digital.ttf'); }
+/*@font-face { font-family: Delicious; font-weight: bold; src: url('Delicious-Bold.otf');}*/
+
+body {
+  font-family: digital;
+  background-color: rgb(0, 0, 0);
+  color: rgb(102, 102, 102);
 }
-#root {
-  height: 100%;
+
+button {
+  box-sizing: border-box;
+  margin: 5px 2px 10px 0;
+  padding: 5px 8px;
+  width: 50px;
+}
+
+#root{
+  width: 100%
+}
+
+.container
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 90vh;
+   width: 100%;
+}
+
+.display
+{
+   width: 80%;
+   height: 100px;
+}
+
+#clock {
+  font-size: 1.5em;
+  font-weight: 100;
+  display: flex;
+}
+
+#timer {
+  font-size: 7em;
+  font-weight: 100;
+  margin: 0 14%;
+}
+
+.digit span {
+  color: red;
+}
+
+.amPm{
+  margin-left: 5px;
 }
